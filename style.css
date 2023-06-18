@@ -1,11 +1,30 @@
-html, body {
+html,
+body {
     width: 100%;
-    height:100%;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
 }
+
 canvas {
     width: 100%;
-    height:100%;
+    height: 100%;
+}
+
+p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7em;
+    line-height: 1.7em;
+    font-weight: 400;
+    padding: calc(5px + 1vw) calc(10px + 2vw);
+    font-weight: 400;
+}
+
+a {
+    color: inherit
 }
