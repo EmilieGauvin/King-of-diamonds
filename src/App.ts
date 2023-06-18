@@ -24,10 +24,10 @@ export default class App {
             light.groundColor = new BABYLON.Color3(0.29, 0, 0.55);
             light.intensity = 2;
 
-        // hide/show the Inspector
+        // Hide/show the Inspector
         window.addEventListener("keydown", (ev) => {
             // Shift+Ctrl+Alt+I
-            if (ev.shiftKey && ev.ctrlKey && ev.altKey && ev.keyCode == 73) {
+            if (ev.shiftKey && ev.ctrlKey && ev.altKey && ev.keyCode === 73) {
                 if (scene.debugLayer.isVisible()) {
                     scene.debugLayer.hide();
                 } else {
@@ -36,7 +36,7 @@ export default class App {
             }
         });
 
-        //Resizing event
+        // Resizing event
         window.addEventListener("resize", function(){ engine.resize(); });
 
         // Set up card and king stencil shader
