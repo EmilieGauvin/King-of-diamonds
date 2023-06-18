@@ -1,0 +1,23 @@
+{
+  "name": "01-card-case-study",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "vercel --prod"
+  },
+  "devDependencies": {
+    "@babylonjs/core": "^6.8.0",
+    "@babylonjs/inspector": "^6.8.0",
+    "@types/earcut": "^2.1.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "earcut": "^2.2.4",
+    "vercel": "^30.2.2"
+  }
+}
