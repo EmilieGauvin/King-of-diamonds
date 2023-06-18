@@ -1,13 +1,13 @@
 import * as BABYLON from "@babylonjs/core";
 
-//// Shader constants for both frond and back of card
+//// Shader constants for both front and back of card
 // Background color of the card
 const mainColor = new BABYLON.Vector3(1, 0.9882352941176471, 0.9529411764705882);
 // Color of the first voronoi holographic effect
 const voronoiColor1 = new BABYLON.Vector3(0.44, 0.16, 0.0);
 // Color of the second voronoi holographic effect
 const voronoiColor2 = new BABYLON.Vector3(0.51, 0.34, 0.0);
-// Radius of the card round corner
+// Radius of the card round corners
 const cornerRadius: number = 0.05;
 // Thickness of the red border
 const thicknessBorder: number = 0.005; // must be < to cornerRadius
@@ -36,7 +36,7 @@ export default class Card {
 
         // 3 Layers of parallax texture, the 2b and 3b textures are stencils of the textures 
         // to reset the color informations of the textures layers bolow before adding one on top.
-        // For the front card, we use a place holder as stencil because there is no need for it.
+        // For the front card, we use a place holder as stencils because there is no need for it.
         var cardTexture1 = new BABYLON.Texture("./cardTexture1.png", scene);
         var cardTexture2 = new BABYLON.Texture("./cardTexture2.png", scene);
         var cardTexture3 = new BABYLON.Texture("./cardTexture3.png", scene);
